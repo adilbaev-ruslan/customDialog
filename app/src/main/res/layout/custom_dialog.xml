@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minWidth="280dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:text="@string/dom"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/title_color"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="bottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            app:layout_constraintStart_toStartOf="@id/tvTitle"
+            app:layout_constraintEnd_toEndOf="@id/tvTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            android:layout_marginTop="28dp"/>
+
+
+    <TextView
+        android:id="@+id/btnPositiv"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:text="@string/select"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/button_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recyclerView"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/btnNegativ"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:text="@string/cancel"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="@color/button_color"
+        app:layout_constraintEnd_toStartOf="@id/btnPositiv"
+        app:layout_constraintBottom_toBottomOf="@id/btnPositiv"
+        app:layout_constraintTop_toTopOf="@id/btnPositiv"
+        android:layout_marginEnd="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

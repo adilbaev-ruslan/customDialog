@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lesson41</string>
+    <string name="dom">Квартира</string>
+    <string name="select">Выбрать</string>
+    <string name="cancel">Отмена</string>
+    <string name="home">Квартира:</string>
+</resources>
