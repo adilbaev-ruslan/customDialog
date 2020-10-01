@@ -15,6 +15,5 @@ class MainActivity : AppCompatActivity() {
             val dialog:CustomDialog = CustomDialog(this, this)
             dialog.show()
         }
-
     }
 }
