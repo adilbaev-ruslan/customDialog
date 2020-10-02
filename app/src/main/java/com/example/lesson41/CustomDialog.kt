@@ -17,7 +17,6 @@ class CustomDialog(context: Context, activity: MainActivity): Dialog(context) {
         setContentView(R.layout.custom_dialog)
         setData()
         recyclerView.adapter = adapter
-        recyclerView.layoutManager = GridLayoutManager(context, 5, GridLayoutManager.VERTICAL, false)
 
         btnPositiv.setOnClickListener {
             adapter.selectedItem()

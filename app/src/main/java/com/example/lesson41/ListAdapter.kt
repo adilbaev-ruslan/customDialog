@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.custom_dialog.view.*
 import kotlinx.android.synthetic.main.item.view.*
 
 class ListAdapter(val activity: MainActivity): RecyclerView.Adapter<ListViewHolder>() {
@@ -25,7 +26,7 @@ class ListAdapter(val activity: MainActivity): RecyclerView.Adapter<ListViewHold
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         holder.populateModel(models[position], activity)
-        holder.itemView.setOnClickListener {
+        holder.itemView.tvItem.setOnClickListener {
             rowIndex = position
             notifyDataSetChanged()
         }
